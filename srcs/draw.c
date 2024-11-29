@@ -6,7 +6,7 @@
 /*   By: hoslim <hoslim@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/13 12:51:41 by hoslim            #+#    #+#             */
-/*   Updated: 2023/03/27 17:27:55 by hoslim           ###   ########.fr       */
+/*   Updated: 2023/03/29 17:30:30 by hoslim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@ int	ft_loop(void *game_void)
 	t_game	*game;
 
 	game = game_void;
-	game->img.img = mlx_new_image(game->mlx, game->win_width, game->win_height);
 	game->img.data = (int *)mlx_get_data_addr(game->img.img, \
 	&(game->img.bpp), &(game->img.line_size), &(game->img.endian));
 	update_player(game);
